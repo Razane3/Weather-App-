@@ -1,2 +1,2 @@
-# Weather-App-
-Weather app using javascript
+# Weather-App
+Weather app using javascript.
