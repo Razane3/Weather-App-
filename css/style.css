@@ -1,0 +1,130 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+   
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "work sans" ,sans-serif;
+   background-color: #222;
+   }
+
+li{
+    list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.card{
+    padding-left:25px;
+    padding-right:25px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:500px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    margin-top: calc((100vh - 526px) / 2);
+}
+/*   media queries    */
+/* Small */
+@media (max-width: 768px) {
+  .card {
+   width: 350px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.card .search{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.card .search input{
+    padding: 10px 15px;
+    border-radius: 37px;
+    outline: 0;
+    border: 0;
+    background-color: #eee;
+    color: black;
+    height: 60px;
+    font-size: 16px;
+    flex: 1;
+}
+.card .search button {
+    background-color: #eee;
+    border: 0;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+.card .search button img{
+    width: 17px;
+}
+.card .weather .weatherpic{
+    width: 200px;
+    max-width: 100%;
+    margin-top: 5px;
+}
+.card .weather .temp{
+    font-size: 55px;
+    padding: 0 0 10px
+}
+.card .weather .details{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+.card .weather .details .col{
+    display: flex;
+}
+.card .weather .details .col img{
+   max-width: 100%;
+   width: 35px;
+   padding-right: 5px;
+}
+.card .weather .details .col .text{
+padding-left: 7px;
+}
+.card .weather .details .col p{
+    font-size: 16px;
+
+}
+.card .weather .details .col .windy,
+.card .weather .details .col .humidity{
+    font-size: 25px;
+    font-weight: 400;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 17px;
+    display: none;
+}
