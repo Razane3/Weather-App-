@@ -3,7 +3,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
-   
     margin: 0;
 }
 html{
@@ -32,25 +31,13 @@ a{
     text-align: center;
     color: white;
     padding-bottom: 30px;
-    margin-top: calc((100vh - 526px) / 2);
+    margin-top: calc((100vh - 500px) / 2);
 }
 /*   media queries    */
 /* Small */
 @media (max-width: 768px) {
   .card {
-   width: 350px;
-  }
-}
-/* Medium */
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-/* Large */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+   width: 300px;
   }
 }
 .card .search{
